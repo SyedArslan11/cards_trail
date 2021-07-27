@@ -1,22 +1,26 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+import { Button, Row,Col } from "react-bootstrap";
 export const Counter = () => {
   const [cntr, setCntr] = useState(0);
   return (
+  
     <div>
-      <table>
-        <tr>
-          <td>
+      <Row>
+        <Col>
+          
             <Button variant="dark" onClick={() =>cntr<10 && setCntr(cntr + 1)}>
               + 
             </Button>
-          </td>
+            </Col><Col>
           <h2>{cntr}</h2>
-          <td>
+          </Col>
+          <Col>
+          
             <Button variant="dark" onClick={()=>cntr>0 && setCntr(cntr - 1)}> - </Button>
-          </td>
-        </tr>
-      </table>
+          </Col>
+        </Row>
+      
     </div>
+    
   );
 };
