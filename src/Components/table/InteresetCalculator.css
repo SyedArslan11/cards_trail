@@ -1,14 +1,30 @@
-.Calc{
-  background-color: rgb(228, 209, 209) ;
-  box-shadow: blue
+#Calc{
+  background-color: rgb(5, 4, 4) ;
+  color: aliceblue;
+  margin: 40px;
+  
+  text-align: center;
+  
 
 }
-.card{
-  margin: 10px;
-  background-color: rgb(32, 28, 28);
+
+
+.secondCard{
+  background-color: blueviolet;
+  padding: 10px;
   color: aliceblue;
-  ;
 }
-.form-control{
-  margin: 5px;
+.pianobtn{
+  height: 200px;
+  box-shadow: 0 0 20px black;
+}
+.pianobtn:hover{
+  color: white;
+  background-color: black;
+  
+}
+
+.pianobtn:active{
+  transform: scale(0.9);
+  transition: 0.5s;
 }
