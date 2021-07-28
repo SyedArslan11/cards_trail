@@ -5,9 +5,10 @@ import "./App.css";
 import React from "react";
 // import { Counter } from './Components/Counter';
 import "bootstrap/dist/css/bootstrap.min.css";
-// import { Forms } from "./Components/table/Forms";
+import { Forms } from "./Components/table/Forms";
 //import { GridLayout } from "./Components/table/GridLayout";
-import { Forms2 } from "./Components/table/TrippleLoop";
+// import { Forms2 } from "./Components/table/TrippleLoop";
+import { EmiCalculator } from "./Components/table/InteresetCalculator"
 function App() {
   return (
     /*<div>
@@ -16,7 +17,8 @@ function App() {
   );
 }*/
     <div>
-      <Forms2 />
+      {/* <Forms /> */}
+      <EmiCalculator/>
       {/* {<GridLayout />} */}
       {/* <Counter/> */}
     </div>

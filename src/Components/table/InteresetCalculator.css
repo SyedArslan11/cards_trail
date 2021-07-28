@@ -1,0 +1,14 @@
+.Calc{
+  background-color: rgb(228, 209, 209) ;
+  box-shadow: blue
+
+}
+.card{
+  margin: 10px;
+  background-color: rgb(32, 28, 28);
+  color: aliceblue;
+  ;
+}
+.form-control{
+  margin: 5px;
+}

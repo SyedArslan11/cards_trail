@@ -1,12 +1,28 @@
 .profilecard{
-    background-color: black;
+    background-color: cyan;
     color: blanchedalmond;
 
 }
 
 .profilecard2{
-    background-color: rgb(19, 126, 175);
+    background-color: black;
     color: blanchedalmond;
 
+}
+.col-4{
+    border: 3px solid black;
+    border-radius: 20px;
+}
+.row{
+    padding: 5px;
+
+}
+.firstcard{
+    background-color: rgb(255, 255, 255);
+    color: crimson;
+}
+.firstcard2{
+    background-color: black;
+    color: plum;
 }
 

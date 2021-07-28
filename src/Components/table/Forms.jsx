@@ -15,11 +15,11 @@ export const Forms = () => {
 
   return (
     <div>
-      <Card className="infocolm">
+      <Card>
         <Row>
           <Col></Col>
 
-          <Col xs={4}>
+          <Col xs={4} className={bulb === "On" ? "firstcard" : "firstcard2"}>
             <Row> First Name: </Row>
             <Row>
               <Form.Control
