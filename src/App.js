@@ -10,6 +10,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import { Forms2 } from "./Components/table/TrippleLoop";
 import { EmiCalculator } from "./Components/table/InteresetCalculator"
 import { PianoBtn } from "./Components/table/PianoBtn"
+import { Container, Row,Col } from "react-bootstrap"
+import {AudioPlayer} from "./Components/table/AudioPlayer"
 function App() {
   return (
     /*<div>
@@ -18,9 +20,18 @@ function App() {
   );
 }*/
     <div>
-      <PianoBtn/>
+      <Container>
+      <AudioPlayer/>
+      <Row>
+      
+      
+      
+      <Col md={4}><PianoBtn/></Col>
+      <Col md={4}><PianoBtn/></Col>
+      <Col md={4}><PianoBtn/></Col>
+      </Row></Container>
       {/* <Forms /> */}
-      <EmiCalculator/>
+      {/* <EmiCalculator/> */}
       {/* {<GridLayout />} */}
       {/* <Counter/> */}
       
