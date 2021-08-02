@@ -5,12 +5,31 @@ export const PianoBtn = () => {
     const audio = new Audio(`notes/${bit}.mp3`);
     audio.play();
   };
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "a" && pianoPlay("A"));
+    if (e.key === "s" && pianoPlay("B"));
+    if (e.key === "d" && pianoPlay("C"));
+    if (e.key === "f" && pianoPlay("D"));
+    if (e.key === "h" && pianoPlay("E"));
+    if (e.key === "j" && pianoPlay("F"));
+    if (e.key === "k" && pianoPlay("G"));
+    if (e.key === "l" && pianoPlay("G4"));
+    if (e.key === "A" && pianoPlay("As"));
+    if (e.key === "S" && pianoPlay("B4"));
+    if (e.key === "D" && pianoPlay("Cs4"));
+    if (e.key === "F" && pianoPlay("Ds"));
+    if (e.key === "H" && pianoPlay("E4"));
+    if (e.key === "J" && pianoPlay("Fs"));
+    if (e.key === "K" && pianoPlay("Gs"));
+    if (e.key === "L" && pianoPlay("Gs4"));
+    e.stopPropagation();
+  });
   return (
     <div>
       <Button
         variant="light"
         className="pianobtn"
-        onMouseDown={() => pianoPlay("A")}
+        onMouse={() => pianoPlay("A")}
       >
         A
       </Button>
